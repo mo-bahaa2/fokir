@@ -1,0 +1,1032 @@
+html {
+  font-family: "Roboto", system-ui;
+  scroll-behavior: smooth;
+}
+
+/*    body  */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*     clear-fix */
+.clearfix {
+  clear: both;
+}
+
+/*  a  and    li  */
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* ****************************************************************************** **************************/
+
+/*            nav-bar            */
+
+.nav {
+  padding: 15px 50px;
+  margin: 0 30px;
+  width: 90%;
+  position: relative;
+  /* z-index: 10; */
+}
+
+/*                 logo         */
+
+.logo {
+  width: 50%;
+  float: left;
+  padding-top: 10px;
+  margin: 0 0 0 60px;
+}
+
+.logo a {
+  color: #ff305b;
+  font-size: 30px;
+  font-weight: 400;
+  padding-left: 20px;
+  text-transform: capitalize;
+}
+
+/*      links     */
+
+.links {
+  width: 50%;
+  float: right;
+  padding-right: 20px;
+}
+
+/*          links ul          */
+
+.links ul {
+  /* background-color: aqua; */
+  float: right;
+  margin: 7px 20px 0 0;
+  position: absolute;
+  top: 15px;
+  right: 80px;
+}
+
+.links li {
+  /* background-color: burlywood; */
+  float: left;
+  padding: 10px 20px 10px 0;
+  vertical-align: 30px;
+}
+
+.links li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  text-transform: capitalize;
+  transition: color 0.4s ease-in;
+}
+
+.links li a span {
+  color: #ff305b;
+}
+
+/*            hover for a                    */
+.links li a:hover {
+  color: #ff305b;
+}
+
+/*            home-section              */
+
+.home {
+  min-height: 100%;
+  width: 100%;
+  background: url(./image/hero\ img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/*          pseudo class             */
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*   div->>>>>   main-home-section      */
+
+.home .home-section {
+  /* background-color: rgba(0, 255, 255, 0.355); */
+  text-align: center;
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* vertical-align: -100px; */
+}
+
+.home-section h1 {
+  color: #ff305b;
+  font-size: 65px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.home-section h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 0;
+  margin: 5px 0;
+  /* font-family: 'Source Sans Pro', sans-serif */
+}
+
+.home-section h4 {
+  color: white;
+  font-size: 23px;
+  font-weight: 300;
+  margin: 3px 0 5px 0;
+}
+
+.home-section span{
+  position: relative;
+}
+
+
+/* ****************************************************************************** **********************/
+
+/* **************** section********************* */
+
+section {
+  /* background-color: beige; */
+  padding: 100px 0 120px;
+  position: relative;
+  margin: 15px 0;
+}
+
+/********** image  ****************** */
+
+.about .card {
+  position: relative;
+  /* background-color: aqua; */
+  float: left;
+  width: 25%;
+
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 19%;
+  padding-left: 0;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .icon-img {
+  /* background-color: rgb(125, 77, 77); */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 210px 0 0;
+  transition: transform 1s;
+  transform: translateY(110%);
+}
+
+.card .icon-img i {
+  /* background-color: aqua; */
+  /* position: absolute; */
+  padding: 0 10px;
+  color: white;
+}
+/* ********hover  for icon transform************* */
+.card:hover .icon-img {
+  transform: translateY(0);
+}
+/* ********  hover for i ************* */
+.card .icon-img i:hover {
+  color: #ff305b;
+}
+
+/***********::befor  ->>>> to make bored behind the img  */
+.bord::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 450px;
+  width: 350px;
+  /* border-radius: 50%; */
+  top: 72px;
+  left: 17.6%;
+  border: #555555 solid 8px;
+  border-radius: 5px;
+}
+
+/* *********content in section(1) ******************* */
+
+.about .details {
+  position: absolute;
+  /* background-color: #453b3d; */
+  padding-right: 0 0 0 70px;
+  width: 45%;
+  float: right;
+  top: 9%;
+  right: 80px;
+}
+
+/********* h2 edtion *********/
+section .details h2 {
+  /* background-color: blueviolet; */
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 0 0 0 15px;
+}
+section .details h2::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 22px;
+  background-color: #ff305b;
+  top: 7%;
+  left: 0;
+}
+
+/********* p edtion *********/
+
+section .details p {
+  font-size: 16px;
+  font-weight: 400;
+  width: 90%;
+  color: #555555;
+  line-height: 23px;
+  position: relative;
+}
+
+/********** <hr> boredr ***************/
+
+section .details p::after {
+  content: " ";
+  position: absolute;
+  top: 120%;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-top: 2px dashed #ccc;
+}
+
+/* ************   ul    ****************** */
+
+section .info {
+  /* position: absolute; */
+  /* background-color: aqua; */
+  padding: 0;
+  margin: 50px 0 0 0;
+  width: 100%;
+}
+
+section .info ul {
+  /* background-color: #ff305b; */
+  float: right;
+  /* display: table; */
+  padding: 0;
+  margin: 0;
+}
+
+/*********    ul li  **************/
+
+section .info ul li {
+  /* background-color: rgb(208, 255, 0); */
+  width: 50%;
+  float: left;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+section .info ul li span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #464646;
+}
+
+/*  ?????????????????????????????????????  disapled??   */
+section .info ul li a {
+  color: #464646;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* ******* button ************** */
+
+/* section .button {
+  background-color: #9f8d91;
+} */
+
+section .button button {
+  font-size: 16px;
+  cursor: pointer;
+  margin: 15px 10px 0 0;
+  padding: 15px 30px;
+  background-color: #ff305b;
+  border: #ff305b solid 2px;
+  border-radius: 8px;
+  color: white;
+  transition: background-color 0.5s;
+}
+
+section .button button i {
+  padding: 0 0 0 5px;
+}
+
+/* *****hover of button *********  */
+section .button button:hover {
+  background-color: #f82f21;
+}
+
+/* ****************************************************************************** */
+
+/* bg-color for any section have the smae bg-color */
+.bg-color {
+  background-color: #f1f1f1;
+}
+/*******************************************************************************  */
+
+/* *************** our-service section********************* */
+.our-service {
+  padding: 20px 0;
+  margin: 5px 0;
+  /* text-align: center; */
+}
+
+.our-service h2 {
+  /* background-color: teal; */
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.our-service h2::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 5px;
+  top: 100%;
+  left: 47.4%;
+  border-top: #ff305b solid 1px;
+  border-bottom: #ff305b solid 1px;
+  padding: 2px 0;
+}
+
+/* ********** hr bettwin the boredr ****************** */
+
+.our-service .hr {
+  content: "";
+  /* background-color: teal; */
+  position: absolute;
+  top: 206.5%;
+  left: 45%;
+  width: 155px;
+  height: 5px;
+  /* background-color:#f82f21;  */
+  border-top: #f82f21 solid 1px;
+}
+
+.our-service .contain {
+  margin: 90px 0 0 100px;
+  width: 90%;
+}
+
+.our-service .item {
+  /* position: relative; */
+  /* background-color: tomato; */
+  float: left;
+  width: 24%;
+  text-align: center;
+  margin: 20px 5px 50px 0;
+  padding: 30px 0;
+  transition: all 0.5s;
+}
+
+/* ******* contain in item ********* */
+
+.our-service .item i {
+  /* position: absolute; */
+  /* top: -10px; */
+  color: #ff305b;
+  font-size: 36px;
+  padding: 5px 0;
+  transition: transform 0.5s;
+}
+
+.our-service .item p {
+  width: 80%;
+  /* background-color: rgb(200, 255, 0); */
+  font-size: 16px;
+  padding: 0 35px;
+  margin: 5px 0;
+  color: #555555;
+}
+
+/* ********* HOVER ************* */
+
+.our-service .item:hover {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.our-service .contain .item:hover i {
+  transform: scale(1.1);
+}
+
+/**********************************************************************************************/
+/************** portfolip ********************************************************** */
+.contant {
+  /* background-color: teal; */
+  position: relative;
+}
+
+.contant h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+}
+/*********** hover (((hr))) after ****************** */
+.contant h2::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 5px;
+  top: 60px;
+  left: 47.4%;
+  border-top: #ff305b solid 1px;
+  border-bottom: #ff305b solid 1px;
+  padding: 2px 0;
+}
+
+/*********** hover (((hr))) after ****************** */
+.contant h2::before {
+  content: "";
+  /* background-color:#ff305b; */
+  position: absolute;
+  width: 165px;
+  height: 10px;
+  top: 65px;
+  left: 44.5%;
+  border-top: #ff305b solid 1px;
+}
+
+/*********** link-portfolio ****************** */
+.contant .link-prot {
+  /* background-color: turquoise; */
+  margin: 50px 0 40px;
+  text-align: center;
+}
+
+.contant .link-prot a {
+  /* background-color: red; */
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 20px;
+}
+
+.contant .link-prot a span {
+  color: #ff305b;
+}
+
+.contant .portfolio {
+  margin: auto;
+  width: 80%;
+}
+
+.img-card {
+  /* background-color: rgb(208, 255, 0); */
+  width: 31%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 10px 10px;
+}
+
+.img-card img {
+  width: 100%;
+  position: relative;
+}
+
+.img-card .icon-img {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0; /************** opacity  ***************/
+  transition: opacity 0.3s linear;
+}
+/* 000000000000000000000000000000000000000000000000000000000000 */
+.img-card .icon-img i {
+  position: absolute;
+  color: #ff305b;
+  font-size: 20px;
+  right: 14px;
+  bottom: 14px;
+}
+
+.img-card .icon-img:hover {
+  opacity: 1;
+}
+
+/***********************  fun-section  ->>>cards    ******************************  */
+
+.size-of-fun {
+  padding: 80px 0 80px;
+}
+
+.main-card {
+  /* background-color: aqua; */
+  margin: auto;
+  width: 90%;
+  padding: 50px 0;
+}
+
+.main-card .cards {
+  float: left;
+  width: 23%;
+  /* background-color: #f82f21; */
+  /* padding: 10px 0; */
+  margin: 0 0 0 20px;
+  text-align: center;
+}
+
+.main-card .cards i {
+  color: #ff305b;
+  font-size: 26px;
+}
+
+.main-card .cards h3 {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.main-card .cards h4 {
+  color: #555555;
+  font-size: 16px;
+}
+
+/* ************************************************************************************** */
+
+/***************************** testimonial section ****************************************** */
+
+.alltets {
+  /* background-color: aqua; */
+  /* width: 90%; */
+  margin: auto;
+}
+
+.alltets h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding: 30px 0;
+  text-transform: capitalize;
+}
+
+/*********** hover (((hr))) after ****************** */
+.alltets h2::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 5px;
+  top: 208px;
+  left: 47.4%;
+  border-top: #ff305b solid 1px;
+  border-bottom: #ff305b solid 1px;
+  padding: 2px 0;
+}
+
+/*********** hover (((hr))) after ****************** */
+.alltets h2::before {
+  content: "";
+  /* background-color:#ff305b; */
+  position: absolute;
+  width: 165px;
+  height: 10px;
+  top: 213px;
+  left: 44.5%;
+  border-top: #ff305b solid 1px;
+}
+
+.alltets .test-item {
+  position: relative;
+  background-color: #f1f1f1;
+  margin: auto;
+  width: 50%;
+  height: 30%;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+
+.alltets::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 10%;
+  height: 150px;
+  background-color: #ff305b;
+  border-radius: 5% 0% 120% 0%;
+  z-index: 1;
+}
+
+.alltets .test-item .image {
+  position: absolute;
+  /* background-color: rgb(98, 255, 0); */
+  float: left;
+  width: 15%;
+  left: 5%;
+  top: 20%;
+  z-index: 2;
+}
+
+.alltets .test-item .image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.alltets .test-item .title-test {
+  position: relative;
+  /* background-color: cornflowerblue; */
+  float: right;
+  width: 70%;
+  margin: 0;
+  right: 7%;
+  padding: 0 10px;
+}
+
+.alltets .test-item .title-test h3 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.alltets .test-item .title-test p {
+  font-size: 16px;
+  color: #555555;
+  font-style: italic;
+}
+
+.alltets .test-item .title-test a {
+  color: #777777;
+  font-size: 15px;
+}
+
+.alltets .test-item .title-test .i-u {
+  color: #777777;
+  padding: 0 5px 0 0;
+}
+
+.alltets .test-item .title-test i {
+  color: #f1c30d;
+}
+
+.alltets button {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff305b;
+  top: 82%;
+  left: 48%;
+  padding: 4px 12px;
+  border: #ff305b solid 1px;
+  border-radius: 20% / 50%;
+  cursor: pointer;
+}
+
+.alltets button::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  /* background-color:#ff305b; */
+  top: 0%;
+  left: 120%;
+  padding: 0px 3px;
+  margin-left: 5px;
+  border: #ff305b solid 1px;
+  border-radius: 50% / 50%;
+}
+
+/**********************************************************************************  */
+
+/* *************************** our-bloge ************************* */
+
+.big-blog {
+  /* background-color: aqua; */
+  margin: auto;
+  width: 90%;
+}
+
+/* .big-blog .bloge-section {
+  background-color: #f1c30d;
+} */
+
+.bloge-section h2 {
+  /* background-color: aquamarine; */
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 0 0 15px 0;
+  
+}
+
+/*********** hover (((hr))) after ****************** */
+.big-blog .bloge-section h2::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 5px;
+  top: 23%;
+  left: 47.4%;
+  border-top: #ff305b solid 1px;
+  border-bottom: #ff305b solid 1px;
+  padding: 2px 0;
+}
+
+/*********** hover (((hr))) after ****************** */
+.big-blog .bloge-section h2::before {
+  content: "";
+  /* background-color:#ff305b; */
+  position: absolute;
+  width: 165px;
+  height: 10px;
+  top: 23.6%;
+  left: 44.5%;
+  border-top: #ff305b solid 1px;
+}
+
+/* ***************** cards-bloge **************************************** */
+
+.big-blog .bloge-section .item-blog {
+  /* background-color: teal; */
+  width: 32.3%;
+  float: left;
+  padding: 0 0 15px 0;
+  margin-left: 10px;
+  background-color: #FFFFFF;
+}
+/* make all item start from same point  */
+.big-blog .bloge-section .item-blog .bloge-con {
+  padding-left: 15px;
+}
+/* image or video */
+.big-blog .bloge-section .item-blog a .image {
+  margin: 0 0 10px 0;
+}
+/* size of image or video  */
+.big-blog .bloge-section .item-blog img {
+  width: 100%;
+  padding: 0 0 10px;
+}
+
+.big-blog .bloge-section .item-blog a .video {
+  width: 100%;
+  padding: 0 0 10px;
+  aspect-ratio: 16/9;
+}
+
+.big-blog .bloge-section .item-blog .bloge-con .small-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.item-blog .bloge-con h3 {
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.5s  ;
+}
+
+/* *****************  hover for h3 ********************************* */
+
+.item-blog .bloge-con h3:hover {
+color: #ff305b;
+}
+
+
+.item-blog .bloge-con p {
+  width: 70%;
+  font-size: 16px;
+  color: #555555;
+}
+
+.item-blog .bloge-con .link-bloge a {
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.5s;
+  color: black;
+}
+
+/* *****************  hover for icon a ********************************* */
+
+.item-blog .bloge-con a:hover{
+color: #ff305b;
+}
+
+/* ************************************************************************************************ */
+
+/**************** form section ************************************* */
+
+.form-sec-size{
+  padding: 90px 0;
+  /* background-color: bisque; */
+}
+
+.form-sec{
+  /* background-color: aqua; */
+  width: 90%;
+  margin: auto;
+  /* padding: 30px 0; */
+}
+
+.form-sec h2{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 20px 0;
+}
+
+.form-sec h2{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+/* ***********  befor and after for hr for h2 ******** */
+
+/*********** hover (((hr))) after ****************** */
+.form-sec h2::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 5px;
+  top: 72px;
+  left: 47.4%;
+  border-top: #ff305b solid 1px;
+  border-bottom: #ff305b solid 1px;
+  padding: 2px 0;
+}
+
+/*********** hover (((hr))) after ****************** */
+.form-sec h2::before {
+  content: "";
+  /* background-color:#ff305b; */
+  position: absolute;
+  width: 165px;
+  height: 10px;
+  top: 77px;
+  left: 44.5%;
+  border-top: #ff305b solid 1px;
+}
+
+/* ************************************** */
+form{
+  /* position: relative; */
+  /* background-color: #f1c30d; */
+  width: 60%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+form input{
+  /* background-color: brown; */
+  /* border-radius:5px ; */
+  /* padding: 10px; */
+  border: #7b7777a9 solid 1px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color:#555;
+
+}
+
+form .form-row , .form-col , .col {
+  padding: 10px 0 ;
+}
+
+form .form-row input{
+  width: 100%;
+  border-radius: 5px;
+}
+
+form .form-row .row1{
+  /* background-color: #555; */
+  float: left;
+  width: 47%;
+}
+
+form .form-row .row2{
+  /* background-color: #555555; */
+  float: right;
+  width: 49%;
+}
+
+form .form-col input{
+  width: 100%;
+  border-radius: 5px;
+}
+
+form .col textarea{
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 
+  #7b7777a9 solid 1px;
+  resize: none;
+  color: #555;
+  padding: 10px 0 0 10px;
+  font-size: 15px;
+  /* text-transform:capitalize; */
+}
+
+form .submite-value{
+  width: 100px;
+  margin: 10px 0 0 0 ;
+}
+
+form .submite-value input{
+  background-color: #ff305b;
+  color: white;
+  border: #ff305b solid 1PX;
+  border-radius: 5PX;
+  cursor: not-allowed;
+  transition:background-color 0.5s ;
+}
+
+form .submite-value input:hover{
+  background-color:#f82f21;
+  
+}
+
+
+
+
+
+/* ************************************************************************************** */
+/* **************  fotter-section************************************************* */
+
+footer{
+  background-color: #333333;
+  padding: 50px 0;
+}
+
+footer .foot{
+  margin: auto;
+  width: 90%;
+  /* background-color: aqua; */
+  text-align: center;
+}
+
+footer .foot-icon a{
+  padding: 0 10px;
+  color: white;
+  font-size: 18px;
+  transition: color 0.5s;
+}
+
+footer .foot-icon a:hover {
+  color: #ff305b;
+}
+
+footer .foot p{
+  color: white;
+  font-size: 16px;
+  word-spacing: 1px;
+  font-weight: 400;
+}
+
+footer .foot .color-a{
+  color:#ff305b;
+}
+
+footer .foot .color-a:hover{
+  text-decoration: underline;
+}
